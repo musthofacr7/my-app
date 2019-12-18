@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
 
 function Counter() {
   const [number, setNumber] = React.useState(0);
@@ -12,8 +13,17 @@ function Counter() {
   return (
     <div>
       <h1>{number}</h1>
-      <button onClick={naik}>naik</button>
-      <button onClick={turun}>turun</button>
+      <Button variant="contained" color="primary" size="small" onClick={naik}>
+        naik
+      </Button>
+      <Button
+        variant="contained"
+        color="secondary"
+        size="small"
+        onClick={turun}
+      >
+        turun
+      </Button>
     </div>
   );
 }

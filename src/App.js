@@ -1,6 +1,8 @@
 import React from "react";
-import Counter from "./component/counter/index";
+// import Counter from "./component/counter/index";
 import { Route, Switch } from "react-router-dom";
+import HomePage from "./pages/home";
+import Login from "./pages/login";
 
 function App() {
   return (
@@ -8,10 +10,12 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <h1>Home</h1>
-          <Counter />
+          <HomePage />
+          {/* <Counter /> */}
         </Route>
-        <Route path="/a">
-          <h1>A</h1>
+        <Route path="/login">
+          <h1>Halaman Login</h1>
+          <Login />
         </Route>
         <Route path="/b">
           <h1>B</h1>
